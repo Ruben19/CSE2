@@ -16,7 +16,10 @@ public class Cyclometer {
         feetperMile= 5280,// necessasry for conversion Miles. 
         inchesperFoot=12,// necessasry for conversion
         secondsperMinute=60;//necessary for conversion. 
-        double distanceTrip1, distanceTrip2, totalDistance;//
+        double distanceTrip1, distanceTrip2, totalDistance;
+        // the first two varaibles above represent each individual trips 
+        //distance the final variable is the combination or total distance 
+        // of the two. 
     System.out.println (" Trip 1 took "+
            (secsTrip1/secondsperMinute)+ " minutes and had "+
           countsTrip1+ " counts.");
