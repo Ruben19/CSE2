@@ -12,7 +12,7 @@ public class WelcomeClass{
  System.out.println ("-------------");
  System.out.println (" ^  ^  ^  ^  ^  ^ ");
  System.out.println  ("/ \\/ \\/ \\/ \\/ \\/ \\");
- System.out.println ("<-R--U--C--2--1--9->");
+ System.out.println("<-R--U--C--2--1--9->");
  System.out.println ("\\ /\\ /\\ /\\ /\\ /\\ / ");
  System.out.println (" v  v  v  v  v  v    ");
  System.out.println (" Hello I'm Ruben and I am From lancaster California.");
