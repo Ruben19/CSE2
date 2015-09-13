@@ -3,7 +3,7 @@
 /* This program will calculate the exact dollar amount each member of a party 
 has to pay if they want to split the ckeck evenly. */ 
 
-import java.util.Scanner;// lets java know that the user will be inputing quantities into the program.
+import java.util.*;// lets java know that the user will be inputing quantities into the program.
 public class Check{ // We always have to state a class 
     public static void main ( String[]args) {
         Scanner myScanner= new Scanner(System.in);// this part is necessary because it allows the user to input any number.
