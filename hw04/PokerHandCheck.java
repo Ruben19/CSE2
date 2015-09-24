@@ -32,7 +32,7 @@ public class PokerHandCheck{// allways have to state a class
                 result1= " The Jack";
                 break;
                 default: 
-                result1 = "the " +Integer.toString(card1); // had to explisitly cast to make this int compatible with string varibale 
+                result1 = " the " +Integer.toString(card1); // had to explisitly cast to make this int compatible with string varibale 
                 break; 
                 }
         String suitResult1= " ";       // string variable where the result of suit 1 will be stored. 
@@ -60,11 +60,12 @@ public class PokerHandCheck{// allways have to state a class
                 break;
             case 12: 
                 result2= " The Queen";
+                break;
             case 11: 
                 result2= " The Jack";
                 break;
                 default: 
-                result2 = " the "+Integer.toString(+card2);
+                result2 = " the "+Integer.toString(card2);
                 break; 
                 }
         String suitResult2= " ";        
@@ -92,11 +93,12 @@ public class PokerHandCheck{// allways have to state a class
                 break;
             case 12: 
                 result3= " The Queen";
+                break;
             case 11: 
                 result3= " The Jack";
                 break;
                 default: 
-                result3 = " the "+Integer.toString(+card2);
+                result3 = " the "+Integer.toString(card3);
                 break; 
                 }
         String suitResult3= " ";        
@@ -124,11 +126,12 @@ public class PokerHandCheck{// allways have to state a class
                 break;
             case 12: 
                 result4= " The Queen";
+                break;
             case 11: 
                 result4= " The Jack";
                 break;
                 default: 
-                result4 = " the "+Integer.toString(+card2);
+                result4 = " the "+Integer.toString(card4);
                 break; 
                 }
         String suitResult4= " ";//process is repeated 
@@ -156,11 +159,12 @@ public class PokerHandCheck{// allways have to state a class
                 break;
             case 12: 
                 result5= " The Queen";
+                break;
             case 11: 
                 result5= " The Jack";
                 break;
                 default: 
-                result5 = " the "+Integer.toString(+card2);
+                result5 = " the "+Integer.toString(card5);
                 break; 
                 }
         String suitResult5= " ";        
@@ -179,11 +183,20 @@ public class PokerHandCheck{// allways have to state a class
                 break;
                 }
         String hand = " ";
-               if(result1==result2 |result1==result3|result1==result4|result1==result5
-                |result2==result3|result2==result4|result2==result5|result3==result4|result4==result5){
-               
-                    hand = "You have two double";
-                }    
+               if (card1==card2&card1==card3||card1==card3&card1==card4||card1==card4&card1==card5||card2==card3&card1==card4||card2==card4&card1==card5||card3==card4&card1==card5){
+                   hand ="you have a triple";
+               }
+               else if(card1==card2&card3==card4||card1==card3&card2==card5||card1==card4&card3==card5||card1==card5&card2==card3){
+                   hand="you have two pairs";
+               }
+               else if(result1.compareTo(result2)==0 ||result1.compareTo(result3)==0||result1.compareTo(result4)==0||result1.compareTo(result5)==0// sometimes it detects pairs sometimes it doesnt.
+                |result2.compareTo(result3)==0||result2.compareTo(result4)==0||result2.compareTo(result5)==0||result3.compareTo(result4)==0||result4.compareTo(result5)==0||result3.compareTo(result5)==0){
+                    hand= "you have a pair";
+                }
+                else{
+                hand="You got a high hand";    
+                    
+                }
                     
         
         String cards1= (" Your random cards were: ");    // stores string inside variable     
@@ -195,6 +208,6 @@ public class PokerHandCheck{// allways have to state a class
         System.out.println(result5+suitResult5);
         System.out.println(hand);
     
-        
+  
     }
 }

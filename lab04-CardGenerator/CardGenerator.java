@@ -7,8 +7,8 @@ public class CardGenerator{
             
             int card = (int)(Math.random()*13)+2;
             int suitNum = (int)(Math.random()*3)+1;
-            String name;
-            String suit;
+            String name=" ";
+            String suit=" ";
             switch(card){
                 case 14:
                     name=(" Ace ");
@@ -36,9 +36,8 @@ public class CardGenerator{
             else if(suitNum==1){
                 suit=("Diamonds");
             }
-            name=Integer.toString(card);
-            suit=Integer.toString(suitNum);
-           System.out.println(" You picked the " +name+suit );    
+            
+           System.out.println(" You picked the "+name+suit);    
             
             
             }
