@@ -5,7 +5,7 @@ said block*/
 import java.util.Scanner;// lets java know that we will be using a scanner.
 public class Block{// connects program to file make sure they are the same. 
     public static void main(String[]args){// lets java know that this is the beggining of the string.
-        Scanner myScanner= new Scanner(System.in);// lets java know that the scanner is an input by the user.
+        s// lets java know that the scanner is an input by the user.
         System.out.print(" Enter the lenght of the block in the form xx.xx: ");// prints out the words in yellow and allows user to input a value 
         double blockLength= myScanner.nextDouble();// sets apart memory for the users input in this case 64 bits.
         System.out.print(" Enter the width of the block in the form xx.xx: ");// prints out yellow leters and lets user input value.
