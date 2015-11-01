@@ -11,7 +11,7 @@ public class Arrays{//
   Scanner myScanner= new Scanner(System.in);//creates variable to store future user inputed information. 
   int numberofNames=x;// sets random number equal to number of names variable.
   String []students= new String[numberofNames];// creates array and allocates it.
-   for (int i=0 ; i<numberofNames; i++){// for loop that is initializing the students array
+    for (int i=0 ; i<numberofNames; i++){// for loop that is initializing the students array
     students[i]= myScanner.nextLine();
     }
   int []midterm= new int [numberofNames];//creates midterm array and allocates it. 
