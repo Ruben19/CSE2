@@ -66,25 +66,25 @@ is out of bounds and another for an input that is not greater than the previous 
                // break;
             }
         }
-    public static void bianarysearchArray(int x, int []list){
-        int targetValue= x;
-        int low= 0;
-        int high= 14;
-        int j=1;
-        while (high>=low){
-            int mid = (low+high)/2;
-            if(targetValue<list[mid]){
+    public static void bianarysearchArray(int x, int []list){// binaary search method
+        int targetValue= x; //  value program is searching for
+        int low= 0;//lowest extremity of the array.
+        int high= 14;// heighest extremity of the array.
+        int j=1;// kepps track of the number iterations.
+        while (high>=low){// wile loop that searches the array for the target value.
+            int mid = (low+high)/2;// midpoint of the array.
+            if(targetValue<list[mid]){// if statment that if true sets highest extremity = midpoint minus 1 
                 high=mid-1;
             }
-            else if(targetValue==list[mid]){
+            else if(targetValue==list[mid]){// else if statement that prints out target variable and amount of iterations it took to get there.
                  System.out.println( targetValue + " found at with " + j + " iterations");
-             break;
+             break;// extremly necessary or the program will run for ever. 
             }
-            else{ 
+            else{  // else statment that sets the lowest extremity equal to the midpoint+1 
             low= mid+1;
             }
-            if (low>high){
-                System.out.println( targetValue+" is not present in the list.\n");
+            if (low>high){// if statment that only happens when the lowest extremity is greater than the highest extremity. Prints out the statment below. 
+                System.out.println( targetValue+" is not present in the list.\n"); 
             }
             j++;
         }
