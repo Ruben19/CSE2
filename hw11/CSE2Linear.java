@@ -15,7 +15,7 @@ is out of bounds and another for an input that is not greater than the previous 
         for (int i=0; i< 15; i++){ // for loop that fill in the slots of the array. 
             int x =Input.nextInt();
             //if(!Input.hasNextInt()){ 
-                //System.out.println(" Not an Integer ");
+               // System.out.println(" Not an Integer ");
                 //return;
             //}
             if(x<=100){ // if statments that only accepts input values for 0 to 100 
@@ -31,7 +31,8 @@ is out of bounds and another for an input that is not greater than the previous 
         System.out.println(" ");
         System.out.print ("Enter a number to search for "); 
         int y =Input.nextInt(); // variable that stores input value.
-        linearsearchArray(y, grades1);// call method linearSearch.
+        bianarysearchArray(y, grades1);// call method linearSearch.
+       // System.out.println(grades1[return]);
         ShuffleArray( grades1 );// calls method ShuffleArray
         System.out.println(" ");
         PrintArray(grades1);// calls method printArray
@@ -65,6 +66,33 @@ is out of bounds and another for an input that is not greater than the previous 
                // break;
             }
         }
-   } 
-   
+    public static void bianarysearchArray(int x, int []list){
+        int targetValue= x;
+        int low= 0;
+        int high= 14;
+        int j=1;
+        while (high>=low){
+            int mid = (low+high)/2;
+            if(targetValue<list[mid]){
+                high=mid-1;
+            }
+            else if(targetValue==list[mid]){
+                 System.out.println( targetValue + " found at with " + j + " iterations");
+             break;
+            }
+            else{ 
+            low= mid+1;
+            }
+            if (low>high){
+                System.out.println( targetValue+" is not present in the list.\n");
+            }
+            j++;
+        }
+        
+    }
+ } 
+        
+      
+  
+  
   
