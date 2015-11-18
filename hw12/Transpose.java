@@ -49,7 +49,7 @@ public static void main (String[]args) {
         int y=0;
         for (int i=0; i<rows; i++,x++){
            for(int j=0 ; j<colums;j++,y++){
-           newarray[i][j]= array[y][x];
+           newarray[i][j]= array[y][x]; // sets new array equal to old array val.
             }
         
         } return newarray; // retuns new 2d array. 
