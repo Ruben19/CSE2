@@ -13,7 +13,7 @@ public static void main (String[]args) {
     int[][]newarray; // creates 2d array called new array.
     System.out.println(" ");
     randomMatrix( rows, colums);//calls method 
-    matrix=randomMatrix(rows,colums);.//calls method 
+    matrix=randomMatrix(rows,colums);//calls method 
     printMatrix(matrix);//calls method 
     transposeMatrix(matrix);
     newarray=transposeMatrix(matrix);
@@ -38,7 +38,7 @@ public static void main (String[]args) {
        for(int i=0;i<rows;i++){ // for loop that takes care of the rows 
             for (int j=0;j<colums ;j++){// for loop that takes care of the columbs
              System.out.print(array[i][j]+" "); // prints out the value of each array.
-            }System.out.println("");// prints a space
+            }System.out.println("");// prints a space.
         }
     }
     public static int [][] transposeMatrix(int[][]array){ // method that is suposse to transpose method but it dosent workd something about out of bounds work for hours to try to fix it 
@@ -49,12 +49,11 @@ public static void main (String[]args) {
         int[][]newarray= new int[colums][rows]; 
         int x=0;
         int y=0;
-        for (int i=0; i<colums; i++,x++){
-           for(int j=0 ; j<rows;j++,y++){
+        for (int i=0; i<rows; i++,x++){
+           for(int j=0 ; j<colums;j++,y++){
            newarray[i][j]= array[y][x];
             }
         
         } return newarray; // retuns new 2d array. 
     }
 }
-    
