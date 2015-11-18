@@ -42,8 +42,6 @@ public static void main (String[]args) {
         }
     }
     public static int [][] transposeMatrix(int[][]array){ // method that is suposse to transpose method but it dosent workd something about out of bounds work for hours to try to fix it 
-        System.out.println(array.length);
-        System.out.println(array[0].length);
         int rows= array[1].length;
         int colums= array.length;
         int[][]newarray= new int[colums][rows]; 
